@@ -74,10 +74,20 @@ class ContactController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    // public function update(Request $request, $id)
+    // {
+    //     $contact = Contact::findOrFaild($id);
+        
+    //     $contact->update($request->all());
+    // }
+
+    public function update(Request $request, Contact $contact)
     {
-        //
+        
+        $contact->update($request->all());
+        return $contact;
     }
+
 
     /**
      * Remove the specified resource from storage.
