@@ -16,7 +16,7 @@ return [
     'allowedOrigins' => ['*'],
     'allowedOriginsPatterns' => [],
     'allowedHeaders' => ['*'],
-    'allowedMethods' => ['POST'],
+    'allowedMethods' => ['GET'],
     'exposedHeaders' => [],
     'maxAge' => 0,
 
