@@ -22,7 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 // Route::get('contacts','ContactController@index');
-Route::resource('contacts','ContactController');
+Route::resource('contacts','ContactController')->middleware('auth:api');
 
 Route::group([
 
